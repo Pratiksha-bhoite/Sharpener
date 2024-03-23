@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoteBook App</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Notebook</h1>
+      <label for="searchInput">Search Notes</label>
+      <input type="text" id="searchInput" />
+      <p id="totalNotes">Total Notes : 1</p>
+      <p id="showingNotes">Showing : 1</p>
+    </div>
+
+    <form id="form">
+      <label for="noteTitle">Note Title</label>
+      <input type="text" id="noteTitle" />
+
+      <label for="noteDes">Note Description</label>
+      <textarea id="noteDes"></textarea>
+
+      <button type="submit">Add To Book</button>
+    </form>
+
+    <div id="detilsDiv"></div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
