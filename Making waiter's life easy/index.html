@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant App</title>
+  </head>
+  <body>
+    <form id="form">
+      <label for="price">Choose Price: </label>
+      <input type="number" id="price" />
+      <br /><br />
+      <label for="dishNames">Choose Dish:</label>
+
+      <select id="dishNames">
+        <option value="Non Vegeterian">Non-veg</option>
+        <option value="Chienese">Chienese</option>
+        <option value="Vegeterian">Veg</option>
+        <option value="French Fries">French Fries</option>
+        <option value="Starter">Starter</option>
+        <option value="Sweets">Sweets</option>
+      </select>
+      <br /><br />
+      <label for="dishTable">Choose Table:</label>
+      <select id="dishTable" name="table">
+        <option value="Table1">Table1</option>
+        <option value="Table2">Table2</option>
+        <option value="Table3">Table3</option>
+      </select>
+      <br /><br />
+      <button type="submit">Add to bill</button>
+    </form>
+
+    <h1>Orders</h1>
+
+    <h3>Table 1</h3>
+    <ul id="table1"></ul>
+    <h3>Table 2</h3>
+    <ul id="table2"></ul>
+    <h3>Table 3</h3>
+    <ul id="table3"></ul>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="index.js"></script>
+</html>
